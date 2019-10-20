@@ -1,0 +1,67 @@
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    box-sizing: content-box;
+    background: rgba(0, 0, 0, 0.877);
+    padding: 600px 224.8px;
+}
+
+h1, h3{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    color: tomato;
+    border: 2px solid #ffffff;
+}
+
+::placeholder{
+    color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #ffffff;
+}
+
+label {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 285px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+    border: none;
+    height: 40px;
+    width: 20%;
+    outline: none;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: tomato;
+    cursor: pointer;
+}      
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:valid {
+    border: 2px solid black;
+}            
+
+textarea {
+    resize: none;
+}

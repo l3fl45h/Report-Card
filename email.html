@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Email</title>
+        <style>
+            form {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                height: 250px;
+                box-sizing: border-box;
+                background: rgba(0, 0, 0, 0.733);
+                padding: 40px;
+            }
+
+            h3{
+                text-align: center;
+                margin: 0;
+                padding: 1px;
+                color: tomato;
+                border: none;
+            }
+
+            input[type=button] {
+                border: none;
+                height: 40px;
+                width: 20%;
+                outline: none;
+                color: #ffffff;
+                font-size: 15px;
+                background-color: tomato;
+                align-self: center;;
+            }      
+        </style>
+    </head>
+    <body background="campus.jpg">
+        <form>
+            <h3>EMAIL</h3>
+            <center>
+            <table style="color: #ffffff; padding: 2%;">
+                <tr>
+                    <td>Recipient</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Cc</td>
+                    <td><input type="text" value="info@cpe.edu.ag"></td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><input type="text" value="Report card is ready"></td>
+                </tr>
+                <tr>
+                    <td>Body</td>
+                    <td><input type="text" value="Please see attachment"></td>
+                </tr>
+            </table>
+            
+            <a href="javascript:window.close();"><input type="button" value="Send"></a>
+            </center>
+        </form>
+    </body>
+    
+</html>

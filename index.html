@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            form {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                height: 400px;
+                box-sizing: border-box;
+                background: rgba(0,0,0,0.5);
+                padding: 40px;
+            }
+
+            h1{
+                margin: 0;
+                padding: 0 0 20px;
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            form p{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                color: #ffffff;
+            }
+
+            form input{
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            input[type=text], input[type=password]{
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                background-color: transparent;
+                outline: none;
+                height: 40px;
+                color: #ffffff;
+                display: 16px;
+            }
+
+            ::placeholder{
+                color: #ffffff;
+            }
+
+            input[type=submit]{
+                border: none;
+                height: 40px;
+                outline: none;
+                color: #ffffff;
+                font-size: 15px;
+                background-color: tomato;
+                cursor: pointer;
+                border-radius: 20px;
+            }        
+
+            input[type=submit]:hover{
+                background-color: cyan;
+                color: #ffffff;
+            }
+        </style>
+
+        <script type="text/javascript" src="index.js">
+        </script>
+    </head>
+
+    <body background="campus.jpg">
+        <form>
+            <center><h1>CP Ellingham High School Login</h1></center>
+            <div class="container">
+                <p><b>Username</b></p>
+                <input type="text" id="username" placeholder="Enter Username" name="uname" required><br>
+          
+                <p><b>Password</b></p>
+                <input type="password" id="password" placeholder="Enter Password" name="psw" required><br>
+          
+                <input type="submit" value="Log In" onclick="logindetails(this.form)">
+            </div>
+        </form>
+    </body>
+
+</html>
